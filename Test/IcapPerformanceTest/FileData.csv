@@ -1,0 +1,40 @@
+csvResponseThreshold,csvobjectPath,csvFileName
+3297,test/bmp,10MB.bmp
+7734,test/bmp,160MB.bmp
+1201,test/bmp,20MB.bmp
+11026,test/bmp,232MB.bmp
+2107,test/bmp,40MB.bmp
+3794,test/bmp,80MB.bmp
+12499,test/bmp,271_issue.bmp
+19783,test/doc,100MB.doc
+2256,test/doc,11MB.doc
+3498,test/doc,14MB.doc
+2999,test/doc,20MB.doc
+591,test/doc,40MB.doc
+1621,test/doc,9MB.doc
+344,test/doc,LargeFile.doc
+599,test/doc,SampleDOCFile_1000kb.doc
+987,test/doc,SampleDOCFile_2000kb.doc
+2006,test/doc,SampleDOCFile_5000kb.doc
+4577,test/docx,25MB.docx
+1108,test/docx,40MB.docx
+369,test/docx,Clean.docx
+1205,test/docx,demo.docx
+356,test/docx,doc_embedded_images_12kb.docx
+440,test/gif,file_example_GIF_1MB.gif
+938,test/gif,file_example_GIF_3500kB.gif
+456,test/jpg,Neo.jpg
+201,test/png,Clean.png
+258,test/png,small.PNG
+493,test/ppt,Sanitised.pot
+16213,test/ppt,ResponsetoOilSpillsv3withNotes.ppt
+481,test/ppt,Sanitised.ppt
+39123,test/pptx,Abstract Polygonal Space PowerPoint Templates.pptx
+9983,test/pptx,LargeRemediated.pptx
+2726,test/pptx,SamplePPTXFile_200kb.pptx
+935,test/tif,file_example_TIFF_10MB.tiff
+383,test/tif,file_example_TIFF_1MB.tiff
+677,test/tif,file_example_TIFF_5MB.tiff
+5963,test/xls,01_Excel2000_0035983 - Big.xls
+5702,test/xls,Copy of 01_Excel2000_0035983 - Big.xls
+377,test/xlsx,Clean.xlsx

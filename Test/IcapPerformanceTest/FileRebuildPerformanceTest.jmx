@@ -74,12 +74,12 @@
           </elementProp>
           <elementProp name="ResultDirectory" elementType="Argument">
             <stringProp name="Argument.name">ResultDirectory</stringProp>
-            <stringProp name="Argument.value">C:\Git\file-rebuild-performance-tests\Test\FileRebuildPerformanceTest\Results\</stringProp>
+            <stringProp name="Argument.value">.\Results\</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="DataDirectory" elementType="Argument">
             <stringProp name="Argument.name">DataDirectory</stringProp>
-            <stringProp name="Argument.value">C:\Git\file-rebuild-performance-tests\Test\FileRebuildPerformanceTest\</stringProp>
+            <stringProp name="Argument.value">.\</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>

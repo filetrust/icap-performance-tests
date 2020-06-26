@@ -291,10 +291,6 @@
               <intProp name="Assertion.test_type">16</intProp>
             </ResponseAssertion>
             <hashTree/>
-            <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
-              <stringProp name="DurationAssertion.duration">${csvResponseThreshold}</stringProp>
-            </DurationAssertion>
-            <hashTree/>
           </hashTree>
         </hashTree>
       </hashTree>

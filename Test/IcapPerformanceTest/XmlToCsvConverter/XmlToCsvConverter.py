@@ -2,7 +2,7 @@ import csv
 import xml.etree.ElementTree as ET
 import os
 
-tree = ET.parse("../Results/FileRebuildResults.xml")
+tree = ET.parse("../Results/IcapResults.xml")
 root = tree.getroot()
 
 
@@ -25,7 +25,7 @@ RECORDED_ATTRIBUTES = [
 
 attribute_store = dict(RECORDED_ATTRIBUTES)
 
-with open("../Results/gw_metrics.csv", "w", newline="") as f:
+with open("../Results/IcapResults.csv", "w", newline="") as f:
     csvwriter = csv.writer(f)
 
     # Add column headers

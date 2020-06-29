@@ -25,23 +25,11 @@
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">AWS Region for all Amazon Accounts in use</stringProp>
           </elementProp>
-          <elementProp name="RebuildApiDomainID" elementType="Argument">
-            <stringProp name="Argument.name">RebuildApiDomainID</stringProp>
+          <elementProp name="IcapDataSourceID" elementType="Argument">
+            <stringProp name="Argument.name">IcapDataSourceID</stringProp>
             <stringProp name="Argument.value">41tip7s8rh</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">ID for the AWS account FileRebuild is deployed to</stringProp>
-          </elementProp>
-          <elementProp name="RebuildApiPath" elementType="Argument">
-            <stringProp name="Argument.name">RebuildApiPath</stringProp>
-            <stringProp name="Argument.value">/Prod/api/rebuild</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.desc">Endpoint for the FileRebuild Api</stringProp>
-          </elementProp>
-          <elementProp name="RebuildApiKey" elementType="Argument">
-            <stringProp name="Argument.name">RebuildApiKey</stringProp>
-            <stringProp name="Argument.value">1AN9qsuLWw8EgKxDyc1qM4Uf34ukNTH83KL8HXpt</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.desc">Api Kery for FileRebuild</stringProp>
           </elementProp>
           <elementProp name="S3UploadDomainID" elementType="Argument">
             <stringProp name="Argument.name">S3UploadDomainID</stringProp>
@@ -131,7 +119,7 @@
           <stringProp name="variableNames">csvResponseThreshold,csvobjectPath,csvFileName</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Rebuild Api Call_${csvFileName}" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="File Retrieval Call_${csvFileName}" enabled="true">
           <boolProp name="TransactionController.parent">false</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -245,7 +233,7 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">${RebuildApiDomainID}.execute-api.${AwsRegion}.amazonaws.com</stringProp>
+            <stringProp name="HTTPSampler.domain">${IcapDataSourceID}.execute-api.${AwsRegion}.amazonaws.com</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.protocol"></stringProp>
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
@@ -261,25 +249,8 @@
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-              <collectionProp name="HeaderManager.headers">
-                <elementProp name="x-api-key" elementType="Header">
-                  <stringProp name="Header.name">x-api-key</stringProp>
-                  <stringProp name="Header.value">${RebuildApiKey}</stringProp>
-                </elementProp>
-                <elementProp name="Content-Type" elementType="Header">
-                  <stringProp name="Header.name">Content-Type</stringProp>
-                  <stringProp name="Header.value">application/json</stringProp>
-                </elementProp>
-              </collectionProp>
+              <collectionProp name="HeaderManager.headers"/>
             </HeaderManager>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
-              <collectionProp name="Asserion.test_strings"/>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">16</intProp>
-            </ResponseAssertion>
             <hashTree/>
           </hashTree>
         </hashTree>
@@ -317,7 +288,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">${ResultDirectory}FileRebuildResults.xml</stringProp>
+        <stringProp name="filename">${ResultDirectory}IcapResults.xml</stringProp>
       </ResultCollector>
       <hashTree/>
       <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder" enabled="false">

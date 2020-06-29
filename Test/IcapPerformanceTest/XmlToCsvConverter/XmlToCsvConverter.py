@@ -2,45 +2,36 @@ import csv
 import xml.etree.ElementTree as ET
 import os
 
-tree = ET.parse("C:/Git/file-rebuild-performance-tests/Test/FileRebuildPerformanceTest/Results/FileRebuildResults.xml")
+tree = ET.parse("../Results/FileRebuildResults.xml")
 root = tree.getroot()
 
 
-WANTED_KEYS = [
-    "x-amzn-RequestId",
-    "gw-metric-upload",
-    "gw-metric-detect",
-    "gw-metric-download",
-    "gw-metric-rebuild",
-    "gw-version",
-    "gw-metric-filesize",
+WANTED_ATTRIBUTES = [
+    "t",
+    "lt",
+    "ct",
+    "ts",
+    "s",
+    "lb",
+    "rc",
+    "rm",
+    "tn",
+    "by",
+    "sc",
+    "ec",
+    "ng",
+    "na"
 ]
 
-with open("C:/Git/file-rebuild-performance-tests/Test/FileRebuildPerformanceTest/Results/gw_metrics.csv", "w", newline="") as f:
+with open("../Results/gw_metrics.csv", "w", newline="") as f:
     csvwriter = csv.writer(f)
 
+    # Add column headers
     data = []
+    data.append(WANTED_ATTRIBUTES)
     for http_sample_with_post in [item for item in root.findall("./httpSample") if item.attrib.get("lb").startswith("Post_")]:
-        name = http_sample_with_post.attrib["lb"]
-        text = http_sample_with_post.find("responseHeader").text
-        responseTime = http_sample_with_post.attrib["t"]
-        lines = [item.split(": ", 1) for item in text.splitlines()]
-        lines[0] = lines[0][0].split(" ", 1)
-        lines = [item for item in lines if item[0] in WANTED_KEYS]
-
-        # if data is empty, add headers
-        if not data:
-            headers = ["name"] + [item[0] for item in lines] + ["responseTime"]
-            data.append(headers)
-
         # add row
-        row = [name] + [item[1] for item in lines] + [responseTime]
+        row = [http_sample_with_post.attrib[attrib] for attrib in WANTED_ATTRIBUTES]
         data.append(row)
 
     csvwriter.writerows(data)
-
-
-#import pandas as pd
-#
-#df = pd.read_csv("C:/Git/file-rebuild-performance-tests/Test/FileRebuildPerformanceTest/Results/gw_metrics.csv")
-#print(df)

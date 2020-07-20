@@ -1,0 +1,197 @@
+[
+    {
+        "responseThreshold": 3297,
+        "ObjectPath": "test/bmp",
+        "fileName": "10MB.bmp"
+    },
+    {
+        "responseThreshold": 7734,
+        "ObjectPath": "test/bmp",
+        "fileName": "160MB.bmp"
+    },
+    {
+        "responseThreshold": 1201,
+        "ObjectPath": "test/bmp",
+        "fileName": "20MB.bmp"
+    },
+    {
+        "responseThreshold": 11026,
+        "ObjectPath": "test/bmp",
+        "fileName": "232MB.bmp"
+    },
+    {
+        "responseThreshold": 2107,
+        "ObjectPath": "test/bmp",
+        "fileName": "40MB.bmp"
+    },
+    {
+        "responseThreshold": 3794,
+        "ObjectPath": "test/bmp",
+        "fileName": "80MB.bmp"
+    },
+    {
+        "responseThreshold": 12499,
+        "ObjectPath": "test/bmp",
+        "fileName": "271_issue.bmp"
+    },
+    {
+        "responseThreshold": 19783,
+        "ObjectPath": "test/doc",
+        "fileName": "100MB.doc"
+    },
+    {
+        "responseThreshold": 2256,
+        "ObjectPath": "test/doc",
+        "fileName": "11MB.doc"
+    },
+    {
+        "responseThreshold": 3498,
+        "ObjectPath": "test/doc",
+        "fileName": "14MB.doc"
+    },
+    {
+        "responseThreshold": 2999,
+        "ObjectPath": "test/doc",
+        "fileName": "20MB.doc"
+    },
+    {
+        "responseThreshold": 591,
+        "ObjectPath": "test/doc",
+        "fileName": "40MB.doc"
+    },
+    {
+        "responseThreshold": 1621,
+        "ObjectPath": "test/doc",
+        "fileName": "9MB.doc"
+    },
+    {
+        "responseThreshold": 344,
+        "ObjectPath": "test/doc",
+        "fileName": "LargeFile.doc"
+    },
+    {
+        "responseThreshold": 599,
+        "ObjectPath": "test/doc",
+        "fileName": "SampleDOCFile_1000kb.doc"
+    },
+    {
+        "responseThreshold": 987,
+        "ObjectPath": "test/doc",
+        "fileName": "SampleDOCFile_2000kb.doc"
+    },
+    {
+        "responseThreshold": 2006,
+        "ObjectPath": "test/doc",
+        "fileName": "SampleDOCFile_5000kb.doc"
+    },
+    {
+        "responseThreshold": 4577,
+        "ObjectPath": "test/docx",
+        "fileName": "25MB.docx"
+    },
+    {
+        "responseThreshold": 1108,
+        "ObjectPath": "test/docx",
+        "fileName": "40MB.docx"
+    },
+    {
+        "responseThreshold": 369,
+        "ObjectPath": "test/docx",
+        "fileName": "Clean.docx"
+    },
+    {
+        "responseThreshold": 1205,
+        "ObjectPath": "test/docx",
+        "fileName": "demo.docx"
+    },
+    {
+        "responseThreshold": 356,
+        "ObjectPath": "test/docx",
+        "fileName": "doc_embedded_images_12kb.docx"
+    },
+    {
+        "responseThreshold": 440,
+        "ObjectPath": "test/gif",
+        "fileName": "file_example_GIF_1MB.gif"
+    },
+    {
+        "responseThreshold": 938,
+        "ObjectPath": "test/gif",
+        "fileName": "file_example_GIF_3500kB.gif"
+    },
+    {
+        "responseThreshold": 456,
+        "ObjectPath": "test/jpg",
+        "fileName": "Neo.jpg"
+    },
+    {
+        "responseThreshold": 201,
+        "ObjectPath": "test/png",
+        "fileName": "Clean.png"
+    },
+    {
+        "responseThreshold": 258,
+        "ObjectPath": "test/png",
+        "fileName": "small.PNG"
+    },
+    {
+        "responseThreshold": 493,
+        "ObjectPath": "test/ppt",
+        "fileName": "Sanitised.pot"
+    },
+    {
+        "responseThreshold": 16213,
+        "ObjectPath": "test/ppt",
+        "fileName": "ResponsetoOilSpillsv3withNotes.ppt"
+    },
+    {
+        "responseThreshold": 481,
+        "ObjectPath": "test/ppt",
+        "fileName": "Sanitised.ppt"
+    },
+    {
+        "responseThreshold": 39123,
+        "ObjectPath": "test/pptx",
+        "fileName": "Abstract Polygonal Space PowerPoint Templates.pptx"
+    },
+    {
+        "responseThreshold": 9983,
+        "ObjectPath": "test/pptx",
+        "fileName": "LargeRemediated.pptx"
+    },
+    {
+        "responseThreshold": 2726,
+        "ObjectPath": "test/pptx",
+        "fileName": "SamplePPTXFile_200kb.pptx"
+    },
+    {
+        "responseThreshold": 935,
+        "ObjectPath": "test/tif",
+        "fileName": "file_example_TIFF_10MB.tiff"
+    },
+    {
+        "responseThreshold": 383,
+        "ObjectPath": "test/tif",
+        "fileName": "file_example_TIFF_1MB.tiff"
+    },
+    {
+        "responseThreshold": 677,
+        "ObjectPath": "test/tif",
+        "fileName": "file_example_TIFF_5MB.tiff"
+    },
+    {
+        "responseThreshold": 5963,
+        "ObjectPath": "test/xls",
+        "fileName": "01_Excel2000_0035983 - Big.xls"
+    },
+    {
+        "responseThreshold": 5702,
+        "ObjectPath": "test/xls",
+        "fileName": "Copy of 01_Excel2000_0035983 - Big.xls"
+    },
+    {
+        "responseThreshold": 377,
+        "ObjectPath": "test/xlsx",
+        "fileName": "Clean.xlsx"
+    }
+]

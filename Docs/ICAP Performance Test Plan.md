@@ -146,7 +146,7 @@ Three levels of testing will be performed using defined scenarios
 | Pattern | Profile | Load Duration(min) | Initial CR Count | Ramp Time up /down (sec) | Step Requests | Max CR Count |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | All | 30 | 1 | 5/5 | 10 | 120 |
-| 
+| --- | --- | --- | --- | --- | --- | --- |
 | 2 | All | 60 | 1 | 20/20 | 100 | 1200 |
 
 The baseline figures are set on the assumption that the MVP solution might be able to run them, failing this, new goals &amp; assumptions can be made. If successful, the load tests will be run.
@@ -158,7 +158,7 @@ Testing with peak load to determine whether the system resources are enough for 
 | Pattern | Profile | Test Duration(min) | Initial CR Count | Ramp Time up /down (sec) | Step Requests | Max CR Count |
 | --- | --- | --- | --- | --- | --- | --- |
 | 3 | All | 30 | 120 | 15/10 | 100 | 12000 |
-| 
+| --- | --- | --- | --- | --- | --- | --- |
 | 4 | All | 60 | 12000 | 15/10 | 100 | 60000 |
 | 5 | All | 30 | 60000 | 30/20 | 100 | 100000 |
 | 6 | All | 60 | 60000 | 30/20 | 100 | 100000 |
@@ -172,7 +172,7 @@ The peak+ may be run in this phase of testing if deemed appropriate.
 | Pattern | Profile | Load Duration(min) | Initial CR Count | Ramp Time up &amp; down (sec) | Step Requests | Max CR Count |
 | --- | --- | --- | --- | --- | --- | --- |
 | 7 | All | 120 | 120 | 10/5 | 100 | 100000 |
-| 
+| --- | --- | --- | --- | --- | --- | --- | 
 | 8 | All | 120 | 120 | 5/1 | 100 | 100000 |
 
 Three types of scenarios will be tested, and the metrics recorded for monitoring
@@ -255,7 +255,7 @@ The Pass criteria will be based on the base load test
 | **Id** | **Assumption** |
 | --- | --- |
 | 1 | Current JMeter test can be used to define perform initial load test with the current configuration until the caching functionality is in. |
-| 
+| --- | --- |
 | 2 | In the absence of load requirement, scenarios will be defined for upload and download requests using made up numbers |
 | 3 | Performance Testing will be done on dedicated performance test environment |
 | 4 | The test execution will be done on the same build released to prod |
@@ -272,7 +272,7 @@ The Pass criteria will be based on the base load test
 | **Id** | **Risk** | **Impact** | **Action/Mitigation** | **Assigned To** |
 | --- | --- | --- | --- | --- |
 | 1 | The test framework and reporting portal is still undecided, and we are assuming that it will be able to generate sufficient load | High | A POC will be done to evaluate the traffic generator&#39;s ability to generate enough load for the tests | PM |
-| 
+| --- | --- | --- | --- | --- | 
 | 2 | Performance testing can be delayed by or blocked by a functional bug discovered during testing | Low | All functional tests will be executed to an agreed level prior to performance testing start | QA |
 | 3 | In the absence of a load test acceptance criteria, assumptions will be used for testing, this could result in the figures used not replicating real user traffic | High | Load requirement related questions have been asked to the customer.Accurate requirements will replace the assumptions made &amp; used prior to prod release | PO |
 
@@ -285,7 +285,7 @@ The key milestones are listed in the table below and represents a group of tasks
 | **ID** | **% Done** | **At Risk** | **Task** | **Due Date** | **Responsible** |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 90 | No | Complete Performance Test Plan | 04/09 | QA &amp; Project team |
-| 
+| --- | --- | --- | --- | --- | --- | 
 | 2 | 50 | No | Define Performance Test Profiles &amp; Load Pattern | 04/09 | QA &amp; Project team |
 | 3 | 90 | No | Develop Scenarios to execute | 04/09 | QA |
 | 4 | 50 | No | Plan and Create Test Environment | 04/09 | QA &amp; SRE |
@@ -312,7 +312,7 @@ The performance test will be done on a dedicated Performance test environment pr
 | **Tool** | **Purpose** |
 | --- | --- |
 | JMeter / Artillery | Use with distributed load for test execution |
-| 
+| --- | --- | 
 | Reporting portal (tbc) | Retrieve &amp; report test results |
 | Traffic generator | To generate load to run the tests |
 | Elastic Kibana Search | To capture the logs |

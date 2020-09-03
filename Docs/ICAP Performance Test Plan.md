@@ -112,7 +112,7 @@ A combination of the load tier and user profile will define the load pattern for
 | **Load Tier 1** | **Load Tier 2** | **Load Tier3** | **Load Tier 4** | **Load Tier5** | **Load Tier 6** | **Peak +** |
 | --- | --- | --- | --- | --- | --- | --- |
 | 10 users | 1000 users | 10000 users | 100000 users | 500000 users | 815000 users | 815000 users |
-| 
+| --- | --- | --- | --- | --- | --- | --- | 
 | 1 cr | 120 cr | 1200 cr | 12000 cr | 60000 cr | 100000 cr | 110000 cr |
 
 Using the given user base of 815000 and the expected peak load of 100000 concurrent requests, we have calculated the concurrent request to be 12% of the user base executing requests simultaneously. The other load tiers have been calculated using the 12 % figure.
@@ -126,7 +126,7 @@ The time for the 100000 requests still needs to be confirmed
 | Id | File Type | File Content | Number of Files | File Size(mb) | Think Time (sec) |
 | --- | --- | --- | --- | --- | --- |
 | 1 | MS Office | Clean | 1 to 5 | 5 to 100 | 5 to 15 |
-| 
+| --- | --- | --- | --- | --- | --- | 
 | 2 | MS Office | Structural issues | 1 to 10 | 5 to 100 | 5 to 15 |
 | 3 | PDF | Clean | 1 to 5 | 5 to 100 | 5 to 15 |
 | 4 | PDF | Structural issues | 1 to 10 | 5 to 100 | 5 to 15 |

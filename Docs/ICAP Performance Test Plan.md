@@ -106,10 +106,10 @@ A combination of the load tier and user profile will define the load pattern for
 
 **User Load Tiers**
 
-| **Load Tier 1** | **Load Tier 2** | **Load Tier3** | **Load Tier 4** | **Load Tier5** | **Load Tier 6** | **Peak +** |
-| --- | --- | --- | --- | --- | --- | --- |
-| 10 users | 1000 users | 10000 users | 100000 users | 500000 users | 815000 users | 815000 users |
-| 1 cr | 120 cr | 1200 cr | 12000 cr | 60000 cr | 100000 cr | 110000 cr |
+|**Tier Name**| **Load Tier 1** | **Load Tier 2** | **Load Tier3** | **Load Tier 4** | **Load Tier5** | **Load Tier 6** | **Peak +** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Number of Users | 10 users | 1000 users | 10000 users | 100000 users | 500000 users | 815000 users | 815000 users |
+| Number of Concurrent Requests | 1 cr | 120 cr | 1200 cr | 12000 cr | 60000 cr | 100000 cr | 110000 cr |
 
 Using the given user base of 815000 and the expected peak load of 100000 concurrent requests, we have calculated the concurrent request to be 12% of the user base executing requests simultaneously. The other load tiers have been calculated using the 12 % figure.
 

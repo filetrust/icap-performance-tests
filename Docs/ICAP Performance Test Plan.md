@@ -73,7 +73,7 @@ Scale up or down based on the number of files being processed
 
 **Configuration diagram that illustrate the full Icap solution:**
 
-![](img/IcapArchitecture.png)
+![Icap Architecture](/img/IcapArchitecture.png)
 
 **Test Approach**
 
@@ -197,7 +197,7 @@ A container will represent a user and created based on the number of users
 
 A container will perform the user actions (upload or download file) to &amp; from the test site &amp; record metrics
 
-![](img/TestExecution.png)
+![Test Execution](/img/TestExecution.png)
 
 **Test Scenarios**
 

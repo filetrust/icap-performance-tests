@@ -8,9 +8,6 @@
 | **Status:** | Published |
 |   ---      | --- |
 | **Version:**| 1.0 |
-|
- |
- |
 
 **Project Overview**
 
@@ -112,7 +109,6 @@ A combination of the load tier and user profile will define the load pattern for
 | **Load Tier 1** | **Load Tier 2** | **Load Tier3** | **Load Tier 4** | **Load Tier5** | **Load Tier 6** | **Peak +** |
 | --- | --- | --- | --- | --- | --- | --- |
 | 10 users | 1000 users | 10000 users | 100000 users | 500000 users | 815000 users | 815000 users |
-| --- | --- | --- | --- | --- | --- | --- | 
 | 1 cr | 120 cr | 1200 cr | 12000 cr | 60000 cr | 100000 cr | 110000 cr |
 
 Using the given user base of 815000 and the expected peak load of 100000 concurrent requests, we have calculated the concurrent request to be 12% of the user base executing requests simultaneously. The other load tiers have been calculated using the 12 % figure.
@@ -126,7 +122,6 @@ The time for the 100000 requests still needs to be confirmed
 | Id | File Type | File Content | Number of Files | File Size(mb) | Think Time (sec) |
 | --- | --- | --- | --- | --- | --- |
 | 1 | MS Office | Clean | 1 to 5 | 5 to 100 | 5 to 15 |
-| --- | --- | --- | --- | --- | --- | 
 | 2 | MS Office | Structural issues | 1 to 10 | 5 to 100 | 5 to 15 |
 | 3 | PDF | Clean | 1 to 5 | 5 to 100 | 5 to 15 |
 | 4 | PDF | Structural issues | 1 to 10 | 5 to 100 | 5 to 15 |
@@ -146,7 +141,6 @@ Three levels of testing will be performed using defined scenarios
 | Pattern | Profile | Load Duration(min) | Initial CR Count | Ramp Time up /down (sec) | Step Requests | Max CR Count |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | All | 30 | 1 | 5/5 | 10 | 120 |
-| --- | --- | --- | --- | --- | --- | --- |
 | 2 | All | 60 | 1 | 20/20 | 100 | 1200 |
 
 The baseline figures are set on the assumption that the MVP solution might be able to run them, failing this, new goals &amp; assumptions can be made. If successful, the load tests will be run.
@@ -158,7 +152,6 @@ Testing with peak load to determine whether the system resources are enough for 
 | Pattern | Profile | Test Duration(min) | Initial CR Count | Ramp Time up /down (sec) | Step Requests | Max CR Count |
 | --- | --- | --- | --- | --- | --- | --- |
 | 3 | All | 30 | 120 | 15/10 | 100 | 12000 |
-| --- | --- | --- | --- | --- | --- | --- |
 | 4 | All | 60 | 12000 | 15/10 | 100 | 60000 |
 | 5 | All | 30 | 60000 | 30/20 | 100 | 100000 |
 | 6 | All | 60 | 60000 | 30/20 | 100 | 100000 |
@@ -172,7 +165,6 @@ The peak+ may be run in this phase of testing if deemed appropriate.
 | Pattern | Profile | Load Duration(min) | Initial CR Count | Ramp Time up &amp; down (sec) | Step Requests | Max CR Count |
 | --- | --- | --- | --- | --- | --- | --- |
 | 7 | All | 120 | 120 | 10/5 | 100 | 100000 |
-| --- | --- | --- | --- | --- | --- | --- | 
 | 8 | All | 120 | 120 | 5/1 | 100 | 100000 |
 
 Three types of scenarios will be tested, and the metrics recorded for monitoring
@@ -255,7 +247,6 @@ The Pass criteria will be based on the base load test
 | **Id** | **Assumption** |
 | --- | --- |
 | 1 | Current JMeter test can be used to define perform initial load test with the current configuration until the caching functionality is in. |
-| --- | --- |
 | 2 | In the absence of load requirement, scenarios will be defined for upload and download requests using made up numbers |
 | 3 | Performance Testing will be done on dedicated performance test environment |
 | 4 | The test execution will be done on the same build released to prod |
@@ -272,7 +263,6 @@ The Pass criteria will be based on the base load test
 | **Id** | **Risk** | **Impact** | **Action/Mitigation** | **Assigned To** |
 | --- | --- | --- | --- | --- |
 | 1 | The test framework and reporting portal is still undecided, and we are assuming that it will be able to generate sufficient load | High | A POC will be done to evaluate the traffic generator&#39;s ability to generate enough load for the tests | PM |
-| --- | --- | --- | --- | --- | 
 | 2 | Performance testing can be delayed by or blocked by a functional bug discovered during testing | Low | All functional tests will be executed to an agreed level prior to performance testing start | QA |
 | 3 | In the absence of a load test acceptance criteria, assumptions will be used for testing, this could result in the figures used not replicating real user traffic | High | Load requirement related questions have been asked to the customer.Accurate requirements will replace the assumptions made &amp; used prior to prod release | PO |
 
@@ -312,7 +302,6 @@ The performance test will be done on a dedicated Performance test environment pr
 | **Tool** | **Purpose** |
 | --- | --- |
 | JMeter / Artillery | Use with distributed load for test execution |
-| --- | --- | 
 | Reporting portal (tbc) | Retrieve &amp; report test results |
 | Traffic generator | To generate load to run the tests |
 | Elastic Kibana Search | To capture the logs |

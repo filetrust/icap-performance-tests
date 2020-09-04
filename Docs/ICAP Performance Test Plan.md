@@ -275,7 +275,6 @@ The key milestones are listed in the table below and represents a group of tasks
 | **ID** | **% Done** | **At Risk** | **Task** | **Due Date** | **Responsible** |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 90 | No | Complete Performance Test Plan | 04/09 | QA &amp; Project team |
-| --- | --- | --- | --- | --- | --- | 
 | 2 | 50 | No | Define Performance Test Profiles &amp; Load Pattern | 04/09 | QA &amp; Project team |
 | 3 | 90 | No | Develop Scenarios to execute | 04/09 | QA |
 | 4 | 50 | No | Plan and Create Test Environment | 04/09 | QA &amp; SRE |

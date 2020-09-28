@@ -1,0 +1,3 @@
+[submodule "pulumi/registry/c-icap"]
+	path = pulumi/registry/c-icap
+	url = https://github.com/filetrust/c-icap.git

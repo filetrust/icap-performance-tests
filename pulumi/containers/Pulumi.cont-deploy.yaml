@@ -1,0 +1,9 @@
+secretsprovider: azurekeyvault://kv-pulumi-shared.vault.azure.net/keys/pulumi
+encryptedkey: YnBndVpNcVBkSlBiT2Fha0laWE1FVmtvUHQ5LVU1MnRYaEZNTW1GXy1feC1WSFFxdEVOMVR6U3VKQVFGVXNKa1ZRdFNCQ2FHZEkzV1ZzMzhFWmN5UjBWb3U5NU5aVnpkelk0dldRYU5lZkthTnJKU1lRSHFHdlZUMENDc2xhcFBiQnVRblFhR0VsU1JPOUNMYnVsN1REQ3Rrc1dtOTE4Y2VLVkJVRVNBNVNWMmREa2lCZlJwRVhQTGZZZXBRb0lFT09FZDhnZjZ0Z09pX2tZeFZLMUlmY0JKSy04UjdMLXZabm1NQ1FBRVJVdmJwNnJRLVZ1azZQNTVtOXBXQ29CMTltS016bE92d3h6aTZmX01zRnFjVTJYVW9JSThUU0Uta1RrZkRIUEVBQUJPdlBFU1pmUEV5dlFHdnFKUWZvRnZCTVVxQ0hOci1nblAxck0weWxqYnR3
+config:
+  Cont-Pulumi-Stack:acrpassword:
+    secure: v1:fobrIOHnKU2yZCQX:G1Wl/3mHJMmb6BYvSTaduMHMd8N4a3tLLS7eFg2BpDKjoxZng/MyhcAP861Y0CxY
+  Cont-Pulumi-Stack:acrusername:
+    secure: v1:v4ndCAsSjvIoZOtr:UkjWxenYL8RS8fusaoeb6zdp2e7JEkd+Rw8muZ71nRXh8MC/0w==
+  azure:environment: public
+  azure:location: UKSouth

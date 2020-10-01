@@ -10,6 +10,7 @@ config = pulumi.Config()
 created_by = username()
 team = "Dev Team"
 scope = "ICAP Project"
+port_num = "1344"
 
 # To do - write functions for the below variables
 rg = "gw-icap-performance-pool-c11c167a"
@@ -35,7 +36,7 @@ create_container_instance = azure.containerservice.Group("glasswallicap-1-",
             cpu=1,
             memory=1.5,
             ports=[azure.containerservice.GroupContainerPortArgs(
-                port=1334,
+                port="{port_num}"
                 protocol="TCP",
             )],
         )],
@@ -64,7 +65,7 @@ create_container_instance = azure.containerservice.Group("glasswallicap-2-",
             cpu=1,
             memory=1.5,
             ports=[azure.containerservice.GroupContainerPortArgs(
-                port=1334,
+                port="{port_num}"
                 protocol="TCP",
             )],
         )],
@@ -93,7 +94,7 @@ create_container_instance = azure.containerservice.Group("glasswallicap-3-",
             cpu=1,
             memory=1.5,
             ports=[azure.containerservice.GroupContainerPortArgs(
-                port=1334,
+                port="{port_num}"
                 protocol="TCP",
             )],
         )],
@@ -122,7 +123,7 @@ create_container_instance = azure.containerservice.Group("glasswallicap-4-",
             cpu=1,
             memory=1.5,
             ports=[azure.containerservice.GroupContainerPortArgs(
-                port=1334,
+                port="{port_num}"
                 protocol="TCP",
             )],
         )],
@@ -151,7 +152,7 @@ create_container_instance = azure.containerservice.Group("glasswallicap-5-",
             cpu=1,
             memory=1.5,
             ports=[azure.containerservice.GroupContainerPortArgs(
-                port=1334,
+                port="{port_num}"
                 protocol="TCP",
             )],
         )],
